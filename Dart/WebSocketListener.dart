@@ -6,8 +6,8 @@ import 'package:web_socket_channel/web_socket_channel.dart';
 /// `texto` variable in FFState when a message is received.
 
 Future<void> listenToWebSocket(BuildContext context) async {
-    String wsUrl = "wss://websocket.accevent.com:8081";
-  String? initialMessage = "Flutterflow = connected  tt";
+    String wsUrl = "";
+  String? initialMessage = "";
   try {
     // Create the WebSocket connection
     final WebSocketChannel channel = WebSocketChannel.connect(Uri.parse(wsUrl));
